@@ -5,18 +5,45 @@
   <link rel="stylesheet" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa|Luckiest+Guy" rel="stylesheet">
 
-  <title>TFSA Contribution Room</title>
+  <title>TFSA Calculator</title>
 </head>
-<body class="container-fluid">
-<h1>TFSA Contribution Room</h1>
 
-<div id="content">
+<body id="content" class="container-fluid">
+<div>
+
+</br>
+<h2>TFSA Contribution Room</h2>
 <hr/>
-</br>
 <p></p>Enter you birth year: <select id= dropdown></select>
-<p>Your total TFSA contribution room is <label id = contribution>$</label><p>
+<p>Your Total TFSA contribution room is <label id = contribution>$</label><p>
 </br>
-<p>If you were born before <label id="not18"></label> your contribution limit is $0 because you are under 18 years of age.</p>
+<p>If you were born after <label id="not18"></label>, your contribution limit is $0 because you are under 18 years of age.</p>
+</div>
+</br>
+<div>
+  <h2>Calculate your remaining contribution room</h2>
+<table id=calctable class="table">
+  <thead>
+  <tr>
+    <th>Year</th>
+    <th>Year Limit</th>
+    <th>Deposit</th>
+    <th>Withdraw</th>
+    <th>Remaining</th>
+  </tr>
+</thead>
+  <tbody id= tablebody>
+  </tbody>
+  <tfoot>
+  <tr>
+    <th>Total</th>
+    <th id = "limitTotal">$0</th>
+    <th id = "depositTotal">$0</th>
+    <th id = "withdrawTotal">$0</th>
+    <th id = "netTotal">$0</th>
+  </tr>
+  </tfoot>
+</table>
 </div>
 
 <script src="script.js"></script>
