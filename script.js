@@ -36,7 +36,15 @@ function calculateContribution(){
   //clear the table body
   var tableBody = document.getElementById('tablebody');
   tableBody.innerHTML="";
-
+  
+  for(entitledYear; entitledYear >= 2023; entitledYear--){
+    let yearlyLimit = 6500;
+    limit += yearlyLimit;
+    createRows(entitledYear, yearlyLimit, tableBody);
+    if (birthDay18th >= entitledYear){
+      return limit;
+    }}
+  
   for(entitledYear; entitledYear >= 2019; entitledYear--){
     let yearlyLimit = 6000;
     limit += yearlyLimit;
